@@ -1,0 +1,329 @@
+@font-face {
+    font-family: comfortaa;
+    src: url(fonts/comfortaa/Comfortaa-Regular.ttf);
+}
+@font-face {
+    font-family: luxia;
+    src: url(fonts/luxia/luxia.otf);
+}
+*{
+}
+body{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: comfortaa;
+}
+header {
+    width: 100%;
+    margin-top:3em;
+    padding: 0px 0px;
+    height:2em;
+    z-index:999;
+}
+header:before,
+header:after {
+    content:"";
+    display:table;
+    }
+         
+    header:after {
+    clear:both;
+    }
+ 
+input.to_nav {
+    z-index: 998;
+    margin-left: 1.5em;
+    margin-top: 5px;
+    float: left;
+    color: black;
+    text-decoration: none;
+    padding: 0px 12px;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0em;
+    top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+    line-height: 37px;
+}
+input.to_nav:hover,
+input.to_nav:focus {
+    color: #1c1c1c;
+    background: #ccc;
+}
+
+/*navigation*/ 
+#mobilenav {
+    display: none;
+} 
+
+#splitnav {
+    margin-top: 1em;
+}
+#moblogo a img{
+    height: 4em;
+    z-index: 999;
+    top:20;
+    position: absolute;
+    left: 50%;
+  	transform: translate(-50%, 0%);
+
+}
+#mobilenav ul, #splitnav ul{
+    list-style: none;
+    padding: 0 0;
+}
+
+#mobilenav ul li, #splitnav ul li{
+    height:2.4em;
+}
+
+#mobilenav li a, #splitnav li a{
+    display: block;
+    padding: 0 0px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    height: 3em;
+    border-bottom: 1px solid #383838;
+}
+ 
+#mobilenav li:last-child, #splitnav li:last-child {
+    border-bottom: none;
+}
+
+#mobilenav li a:hover, 
+#mobilenav li a:focus, #splitnav li a:hover ,#splitnav li a:focus{
+    color: #1c1c1c;
+    background: #ccc;
+}
+ 
+/*footer*/
+ 
+footer {
+}
+@media only screen and (max-width: 768px) {
+	#splitnav{
+    	display: none;
+	}
+    #ban {
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+ /* When page is desktop */
+    input.to_nav {
+        display: none;
+
+    }
+    #mobilenav{
+
+    	display:none;
+
+	}
+ 
+}@media only screen and (min-width: 768px) {
+    .container {
+    min-width: 560px;
+    top:0;
+}
+
+    header {
+        height:5.5em;
+    }
+ 
+    input.to_nav {
+        display: none;
+    }
+    #bannerm{
+        display: none;
+    }
+    #moblogo {
+        margin-top: 0em;
+        display: block;
+        z-index:999;
+        left:10em;
+        position: absolute;
+        top:0;
+        transform: translate(0%, 0%);
+    }
+     
+    .wrapper {
+        position: relative;
+        width: 100%;
+        margin: auto;
+    }
+     
+    #splitnav {
+    	text-align: center;
+    	width: 100%;
+    	z-index: 998;
+        position: absolute;
+        top: 10;
+    }
+    #splitnav ul {
+        margin-right: 6%;
+        height: 100%;
+        float: right;
+        display: block;
+
+    }
+    #splitnav li {
+    	height: 100%;
+        display: inline-block;
+   	 	width: 14%;
+    	padding-right: 4%;
+    	margin-right: 4%;
+
+    }
+
+    /*
+    #splitnav li:nth-child(2) {
+    margin-right:10%;
+	}
+	#splitnav li:nth-child(3) {
+    margin-left: 10%;
+	}
+    */
+    #splitnav li a {
+    width:100%;
+    float: left;
+    border: none;
+    padding: 0 20px;
+    vertical-align: middle;
+    margin-top: 5%;
+    color:black;
+    }
+    
+	#mobilenav { display:none !important;
+    }
+
+    #banner{
+    height:30em;
+    width:100%;
+    margin-top:-10.1em;
+    background-image: url('../img/sitehead2.png');
+    background-origin: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: center;
+    background-position: center;
+    background-clip: contain;
+}
+
+}
+
+
+#bannerd{
+    padding-bottom:0em;
+}
+.imgwrapper img{
+	max-width:100% !important;
+    max-height:100% !important;
+    display:block;
+}
+
+.product {
+    width:100%;
+    text-align: center;
+    float: left;
+}
+.product h2,h3 {
+font-size: 12px;
+}
+.product h6 {
+    font-size: 1.2em;
+}
+
+.container {}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.cartwrapper{
+    z-index: 999;
+    margin-top: 0.7em;
+    margin-right: 0.3em;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+    top:0;
+    right: 0;
+    float:right;
+    position: absolute;
+    font-size: 2.5em;
+}
+.cartwrapper a{
+    color:black;
+}
+.cartwrapper:hover,
+.cartwrapper:focus {
+
+    border-radius: 10%;
+    color: #1c1c1c;
+    background: #ccc;
+}
+.fa-shopping-cart{color:black;
+}
+.product{
+
+}
+.product a{
+    color:black;
+    text-decoration: none;
+}
+
+.product input {
+    width:4em;
+    right:0;
+}
+
+#addq {
+    width:100%;
+}
+.product button {
+    text-align: center;
+    max-width:100%;
+}
+
+#luxban {
+    z-index: 0;
+    position: relative;
+    color:white;
+    font-family: luxia;
+    background-image: url("../img/luxban.jpg");
+    background-origin: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: center;
+    background-position: center;
+    background-clip: contain;
+    width: 100%;
+    height:25em;
+}
+#luxban section {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+@media only screen and (min-width: 768px) {
+    #luxban section {
+        top:50%;
+    }
+}
+
+#luxban h1{
+    font-size: 6rem;
+    text-decoration: overline underline;
+}
+#luxban h5{
+    font-size: 2rem;
+}
+
